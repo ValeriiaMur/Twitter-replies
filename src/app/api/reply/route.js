@@ -8,8 +8,8 @@ export const POST = async (req) => {
 
     // Step 1: Search Tweets
     const tweets = await searchTweets(query);
-    for (const tweet of tweets) {
-      setTimeout(async () => {
+    setTimeout(async () => {
+      for (const tweet of tweets) {
         const prompt = `Craft a reply to this tweet: "${tweet.text}"`;
         const reply = await generateReply(prompt);
         console.log("Prompt:", prompt);
@@ -17,8 +17,8 @@ export const POST = async (req) => {
 
         // Uncomment this to post replies once ready
         await postReply(tweet.id, reply.content);
-      }, 3000);
-    }
+      }
+    }, 60000);
 
     return new Response(
       JSON.stringify({ message: "Replies processed successfully" }),
