@@ -26,3 +26,5 @@ TWITTER_CLIENT_SECRET
 OPENAI_API_KEY
 
 For twitter, use the user specific acess token/secret with read/write permissions (this require sewtting up the consent window for read/write and re-generating tokens after that)
+
+<img width="663" alt="Screenshot 2024-12-20 at 11 17 17 AM" src="https://github.com/user-attachments/assets/5c9ca3d2-674b-4173-81a4-045984c54eae" />
